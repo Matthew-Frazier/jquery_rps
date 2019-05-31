@@ -9,13 +9,15 @@
 </head>
 
 <body>
-  <div class="container">
+  <div id="container">
     <header>
       <h1 id="title">Rock,  Paper,  Scissors</h1>
     </header>
     
+    <div id="scoreboard">
 
-    <div class="scoreboard">
+      <button class="hvr-bounce-in hvr-bounce-in:hover hvr-bounce-in:focus hvr-bounce-in:active" id="reset">Reset Score</button>
+      
       <p>WINS | LOSES | TIES</p>
       <span class="score" id="user_score">0</span>
       <span class="score">-</span>
@@ -42,7 +44,7 @@
       <p id="comp_choice"></p>
     </div>
 
-    <div id="results">
+    <div class="results">
       <p id="result"></p>
     </div>
   </div>

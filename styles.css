@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+body {
+  background: rgb(22,13,185);
+  background: linear-gradient(90deg, rgba(22,13,185,1) 0%, rgba(15,212,188,1) 50%, rgba(22,13,185,1) 100%);
+}
+
+img:hover {
+  cursor: pointer;
+    -webkit-animation: jello-vertical 0.9s both;
+            animation: jello-vertical 0.9s both;
+}
+
+@-webkit-keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+.score {
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#player_choice {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+#reset {
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  font-family: 'Righteous', cursive;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+#scoreboard {
+  text-align: center;
+  background-color: aqua;
+  width: 200px;
+  position: relative;
+  margin: 20px auto;
+  border: 5px solid blue; 
+  border-radius: 20px;
+  font-family: 'Righteous', cursive;
+}
+
+#comp_choice_div {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+#comp_choice {
+  color: rgb(255, 255, 255)
+}
+
+
+.results {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 17px;
+}
+
+.tie_results {
+  text-align: center;
+  background-color: rgb(246, 234, 123);
+  width: 350px;
+  position: relative;
+  margin: 20px auto;
+  border: 5px solid rgb(255, 208, 0); 
+  border-radius: 20px;
+}
+
+.win_results {
+  text-align: center;
+  background-color: rgb(153, 253, 123);
+  width: 350px;
+  position: relative;
+  margin: 20px auto;
+  border: 5px solid rgb(51, 255, 0); 
+  border-radius: 20px;
+}
+
+.lose_results {
+  text-align: center;
+  background-color: rgb(255, 123, 123);
+  width: 350px;
+  position: relative;
+  margin: 20px auto;
+  border: 5px solid rgb(255, 1, 1); 
+  border-radius: 20px;
+}
+
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
