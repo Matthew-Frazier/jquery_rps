@@ -17,13 +17,28 @@
     <div id="scoreboard">
 
       <button class="hvr-bounce-in hvr-bounce-in:hover hvr-bounce-in:focus hvr-bounce-in:active" id="reset">Reset Score</button>
-      
+
       <p>WINS | LOSES | TIES</p>
       <span class="score" id="user_score">0</span>
       <span class="score">-</span>
       <span class="score" id="comp_score">0</span>
       <span class="score">-</span>
       <span class="score" id="tie_score">0</span>
+      <div id="break"></div>
+      <span>Wins:</span>
+      <span id="win_percent"></span>
+      <span>%</span>
+      <span>Loses:</span>
+      <span id="lose_percent"></span>
+      <span>%</span>
+      <span>Ties:</span>
+      <span id="tie_percent"></span>
+      <span>%</span>
+    </div>
+    
+    <div id="comp_choice_div">
+      <p id="player_choice"></p>
+      <p id="comp_choice"></p>
     </div>
     
     <div id="player_choice">
@@ -39,10 +54,7 @@
         <img class="jello-vertical" src="/images/scissor (1).png" alt="scissors">
       </div>
     </div>
-
-    <div id="comp_choice_div">
-      <p id="comp_choice"></p>
-    </div>
+    
 
     <div class="results">
       <p id="result"></p>

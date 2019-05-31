@@ -6,6 +6,16 @@ body {
   background: linear-gradient(90deg, rgba(22,13,185,1) 0%, rgba(15,212,188,1) 50%, rgba(22,13,185,1) 100%);
 }
 
+#comp_choice_div {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(255, 255, 255);
+}
+
+#comp_choice_div > p {
+  margin: 0;
+}
+
 img:hover {
   cursor: pointer;
     -webkit-animation: jello-vertical 0.9s both;
@@ -113,14 +123,7 @@ img:hover {
   font-family: 'Righteous', cursive;
 }
 
-#comp_choice_div {
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-}
 
-#comp_choice {
-  color: rgb(255, 255, 255)
-}
 
 
 .results {
@@ -175,3 +178,6 @@ img:hover {
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
+#break {
+  border: 2px solid blue;
+}
